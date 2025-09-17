@@ -3,34 +3,34 @@
 ## 🎯 **SERVICE ACCESS (Local Network)**
 
 ### **🐳 PORTAINER - Container Management**
-- **URL**: http://192.168.1.173:9000
+- **URL**: http://127.0.0.1:9000 (LOCALHOST ONLY - SECURE)
 - **Purpose**: Manage all Docker containers with beautiful UI
-- **Login**: Create admin account on first visit
+- **Login**: Create admin account on first visit (USE STRONG PASSWORD)
 - **Features**: Start/stop containers, view logs, manage volumes
 
 ### **📊 GRAFANA - System Dashboards** 
-- **URL**: http://192.168.1.173:3000
-- **Login**: admin / admin123
+- **URL**: http://127.0.0.1:3000 (LOCALHOST ONLY - SECURE)
+- **Login**: admin / BnkzxblgKEsrW7pc3V4dWW90OFME7S8rwOeY33A6rs0=
 - **Purpose**: Beautiful system monitoring dashboards
 - **Features**: CPU, memory, disk, network, container metrics
 
 ### **🔍 PROMETHEUS - Metrics Database**
-- **URL**: http://192.168.1.173:9090
+- **URL**: http://127.0.0.1:9090 (LOCALHOST ONLY - SECURE)
 - **Purpose**: Time-series metrics collection
 - **Features**: Query system metrics, alert rules
 
 ### **📈 NODE EXPORTER - System Metrics**
-- **URL**: http://192.168.1.173:9100/metrics
+- **URL**: http://127.0.0.1:9100/metrics (LOCALHOST ONLY - SECURE)
 - **Purpose**: Exports system hardware/OS metrics
 - **Features**: Raw metrics in Prometheus format
 
 ### **🐋 CADVISOR - Container Analytics**
-- **URL**: http://192.168.1.173:8080
+- **URL**: http://127.0.0.1:8080 (LOCALHOST ONLY - SECURE)
 - **Purpose**: Container resource usage and performance
 - **Features**: Docker container monitoring
 
 ### **🚨 ALERTMANAGER - Alert Management**
-- **URL**: http://192.168.1.173:9093
+- **URL**: http://127.0.0.1:9093 (LOCALHOST ONLY - SECURE)
 - **Purpose**: Alert routing and notifications
 - **Features**: Alert grouping, silencing, routing rules
 
@@ -74,9 +74,9 @@ sudo docker restart portainer
 ## 📊 **GRAFANA DASHBOARD SETUP**
 
 ### **Step 1: Initial Login**
-1. Go to http://192.168.1.173:3000
-2. Login: admin / admin123
-3. Skip password change for now
+1. Go to http://127.0.0.1:3000
+2. Login: admin / BnkzxblgKEsrW7pc3V4dWW90OFME7S8rwOeY33A6rs0=
+3. Strong password already set for security
 
 ### **Step 2: Import System Dashboard**
 1. Click "+" → Import
@@ -150,7 +150,7 @@ sudo kill -9 <PID>
 ```
 
 ### **Grafana Dashboard Not Loading**
-1. Check Prometheus is running: http://192.168.1.173:9090
+1. Check Prometheus is running: http://127.0.0.1:9090
 2. Verify data source in Grafana settings
 3. Check container logs: `sudo docker logs grafana`
 

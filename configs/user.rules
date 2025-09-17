@@ -1,0 +1,47 @@
+*filter
+:ufw-user-input - [0:0]
+:ufw-user-output - [0:0]
+:ufw-user-forward - [0:0]
+:ufw-before-logging-input - [0:0]
+:ufw-before-logging-output - [0:0]
+:ufw-before-logging-forward - [0:0]
+:ufw-user-logging-input - [0:0]
+:ufw-user-logging-output - [0:0]
+:ufw-user-logging-forward - [0:0]
+:ufw-after-logging-input - [0:0]
+:ufw-after-logging-output - [0:0]
+:ufw-after-logging-forward - [0:0]
+:ufw-logging-deny - [0:0]
+:ufw-logging-allow - [0:0]
+:ufw-user-limit - [0:0]
+:ufw-user-limit-accept - [0:0]
+### RULES ###
+
+### tuple ### allow any 3389 0.0.0.0/0 any 127.0.0.1 in comment=4c6f63616c2052445020666f7220636c6f7564666c61726564
+-A ufw-user-input -p tcp --dport 3389 -s 127.0.0.1 -j ACCEPT
+-A ufw-user-input -p udp --dport 3389 -s 127.0.0.1 -j ACCEPT
+
+### tuple ### allow any 443 0.0.0.0/0 any 0.0.0.0/0 out comment=485454505320666f7220636c6f7564666c617265642074756e6e656c
+-A ufw-user-output -p tcp --dport 443 -j ACCEPT
+-A ufw-user-output -p udp --dport 443 -j ACCEPT
+
+### tuple ### allow any 7844 0.0.0.0/0 any 0.0.0.0/0 out comment=436c6f7564666c617265642074756e6e656c2070726f746f636f6c
+-A ufw-user-output -p tcp --dport 7844 -j ACCEPT
+-A ufw-user-output -p udp --dport 7844 -j ACCEPT
+
+### END RULES ###
+
+### LOGGING ###
+-A ufw-after-logging-input -j LOG --log-prefix "[UFW BLOCK] " -m limit --limit 3/min --limit-burst 10
+-A ufw-after-logging-forward -j LOG --log-prefix "[UFW BLOCK] " -m limit --limit 3/min --limit-burst 10
+-I ufw-logging-deny -m conntrack --ctstate INVALID -j RETURN -m limit --limit 3/min --limit-burst 10
+-A ufw-logging-deny -j LOG --log-prefix "[UFW BLOCK] " -m limit --limit 3/min --limit-burst 10
+-A ufw-logging-allow -j LOG --log-prefix "[UFW ALLOW] " -m limit --limit 3/min --limit-burst 10
+### END LOGGING ###
+
+### RATE LIMITING ###
+-A ufw-user-limit -m limit --limit 3/minute -j LOG --log-prefix "[UFW LIMIT BLOCK] "
+-A ufw-user-limit -j REJECT
+-A ufw-user-limit-accept -j ACCEPT
+### END RATE LIMITING ###
+COMMIT
