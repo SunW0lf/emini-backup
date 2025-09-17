@@ -1,0 +1,14 @@
+#!/bin/bash
+# XFCE4 session startup script for xrdp
+export XDG_SESSION_DESKTOP=XFCE
+export XDG_CURRENT_DESKTOP=XFCE
+export DESKTOP_SESSION=XFCE
+
+# Disable power management features for RDP sessions
+xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/blank-on-ac -s 0 2>/dev/null || true
+xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/blank-on-battery -s 0 2>/dev/null || true
+xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/dpms-enabled -s false 2>/dev/null || true
+xfconf-query -c xfce4-screensaver -p /saver/enabled -s false 2>/dev/null || true
+
+# Start XFCE session
+exec startxfce4

@@ -1,0 +1,25 @@
+# Ignore sensitive files that shouldn't be in public repo
+configs/cloudflared/*.json
+configs/user-cloudflared/*.json
+*.pem
+*.key
+*.crt
+
+# Ignore large log files
+logs/*
+*.log
+
+# Ignore temporary files
+*.tmp
+*.bak
+*~
+
+# Ignore system-specific files that change frequently
+system-info.txt
+backup-metadata.txt
+
+# Keep directory structure but ignore contents of sensitive dirs
+configs/cloudflared/*
+!configs/cloudflared/.gitkeep
+configs/user-cloudflared/* 
+!configs/user-cloudflared/.gitkeep

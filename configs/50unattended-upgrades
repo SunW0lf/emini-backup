@@ -1,0 +1,8 @@
+// Enable unattended upgrades and auto-reboot if needed
+Unattended-Upgrade::Origins-Pattern {
+        "origin=Ubuntu,codename=${distro_codename}-security";
+        "origin=Ubuntu,codename=${distro_codename}-updates";
+};
+
+Unattended-Upgrade::Automatic-Reboot "true";
+Unattended-Upgrade::Automatic-Reboot-Time "03:30";

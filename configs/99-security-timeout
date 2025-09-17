@@ -1,0 +1,14 @@
+# Security hardening for sudo
+# Reduce sudo timeout to 5 minutes
+Defaults        timestamp_timeout=5
+
+# Log all sudo commands with detailed info
+Defaults        log_input, log_output
+Defaults        iolog_dir="/var/log/sudo-io"
+Defaults        logfile="/var/log/sudo.log"
+
+# Require password for sudo every time (no timestamp)
+# Defaults        timestamp_timeout=0
+
+# Alert for dangerous commands
+Defaults        badpass_message="Access denied. This incident will be logged."
