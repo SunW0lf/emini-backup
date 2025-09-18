@@ -1,0 +1,7 @@
+REPOSITORY:TAG                    SIZE      CREATED AT
+portainer/portainer-ce:latest     186MB     2025-08-26 17:04:41 -0700 PDT
+grafana/grafana:latest            723MB     2025-08-12 02:10:35 -0700 PDT
+prom/prometheus:latest            313MB     2025-07-14 09:46:29 -0700 PDT
+prom/node-exporter:latest         25MB      2025-04-01 08:24:37 -0700 PDT
+prom/alertmanager:latest          72.3MB    2025-03-07 07:10:29 -0800 PST
+gcr.io/cadvisor/cadvisor:latest   80.8MB    2024-03-02 12:59:01 -0800 PST

@@ -1,0 +1,20 @@
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+sunwolf     3448 70.1  1.8 10058824 560328 ?     Sl   Sep17 139:21 warp-terminal
+sunwolf     2449  1.6  0.4 351832 135768 ?       Sl   Sep17   3:18 /usr/lib/xorg/Xorg :10 -auth .Xauthority -config xrdp/xorg.conf -noreset -nolisten tcp -logfile .xorgxrdp.%s.log
+sunwolf   366449  1.1  0.0  18868  3776 ?        S    01:00   0:00 /bin/bash /home/sunwolf/emini-backup/emini-backup/scripts/enhanced-system-backup.sh
+root        1960  0.5  0.1 1264988 38104 ?       Ssl  Sep17   1:05 /usr/local/bin/cloudflared --no-autoupdate --config /etc/cloudflared/config.yml tunnel run
+root        1033  0.3  0.1 2885404 44976 ?       Ssl  Sep17   0:36 /usr/lib/snapd/snapd
+root        1041  0.2  0.0  18268  8416 ?        Ss   Sep17   0:32 /usr/lib/systemd/systemd-logind
+root        1511  0.1  0.1 2689712 47024 ?       Ssl  Sep17   0:20 /usr/bin/containerd
+sunwolf     2432  0.1  0.0  20924 11712 ?        Ss   Sep17   0:17 /usr/lib/systemd/systemd --user
+message+    1016  0.1  0.0  11236  5256 ?        Ss   Sep17   0:15 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         423  0.1  0.1  91804 53228 ?        S<s  Sep17   0:15 /usr/lib/systemd/systemd-journald
+sunwolf     2608  0.1  0.3 3043068 111748 ?      Sl   Sep17   0:12 xfwm4
+root           1  0.0  0.0  23024 13288 ?        Ss   Sep17   0:08 /sbin/init splash
+root          18  0.0  0.0      0     0 ?        I    Sep17   0:06 [rcu_preempt]
+root      361469  0.0  0.0      0     0 ?        I    00:57   0:00 [kworker/u64:2-kvfree_rcu_reclaim]
+syslog      1222  0.0  0.0 222528  6092 ?        Ssl  Sep17   0:05 /usr/sbin/rsyslogd -n -iNONE
+root      350025  0.0  0.0      0     0 ?        I    00:50   0:00 [kworker/u64:4-kvfree_rcu_reclaim]
+root      258007  0.0  0.0      0     0 ?        I    00:00   0:01 [kworker/u64:1-events_power_efficient]
+root      288322  0.0  0.0      0     0 ?        I    00:17   0:00 [kworker/u64:0-kvfree_rcu_reclaim]
+polkitd     1024  0.0  0.0 399264 10592 ?        Ssl  Sep17   0:02 /usr/lib/polkit-1/polkitd --no-debug

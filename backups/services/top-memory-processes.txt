@@ -1,0 +1,20 @@
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+sunwolf     3448 70.1  1.8 10058824 560328 ?     Sl   Sep17 139:21 warp-terminal
+root        1547  0.0  0.5 1405016 177944 tty7   Ssl+ Sep17   0:01 /usr/lib/xorg/Xorg -core :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
+lightdm     1721  0.0  0.5 1752128 173104 ?      Sl   Sep17   0:01 /usr/sbin/unity-greeter
+sunwolf     2449  1.6  0.4 351832 135768 ?       Sl   Sep17   3:18 /usr/lib/xorg/Xorg :10 -auth .Xauthority -config xrdp/xorg.conf -noreset -nolisten tcp -logfile .xorgxrdp.%s.log
+sunwolf     2608  0.1  0.3 3043068 111748 ?      Sl   Sep17   0:12 xfwm4
+sunwolf     2447  0.0  0.2 573520 80048 ?        Sl   Sep17   0:00 xfce4-session
+root        1963  0.0  0.2 2655248 76008 ?       Ssl  Sep17   0:02 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+sunwolf     2683  0.0  0.2 497656 69936 ?        Sl   Sep17   0:00 xfdesktop
+sunwolf     2735  0.0  0.2 828200 61392 ?        Sl   Sep17   0:00 /usr/libexec/evolution-data-server/evolution-alarm-notify
+root         423  0.1  0.1  91804 53228 ?        S<s  Sep17   0:15 /usr/lib/systemd/systemd-journald
+root        1511  0.1  0.1 2689712 47024 ?       Ssl  Sep17   0:20 /usr/bin/containerd
+root        1033  0.3  0.1 2885404 44976 ?       Ssl  Sep17   0:36 /usr/lib/snapd/snapd
+root       27082  0.0  0.1 490136 43344 ?        Ssl  Sep17   0:01 /usr/libexec/fwupd/fwupd
+sunwolf     2891  0.0  0.1 1281352 42492 ?       Ssl  Sep17   0:00 /usr/libexec/evolution-source-registry
+sunwolf     2833  0.0  0.1 465772 40904 ?        Sl   Sep17   0:00 /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libpulseaudio-plugin.so 8 12582925 pulseaudio PulseAudio Plugin Adjust the audio volume of the PulseAudio sound system
+sunwolf     2696  0.0  0.1 617108 39964 ?        Sl   Sep17   0:00 update-notifier
+sunwolf     2837  0.0  0.1 469176 38652 ?        Sl   Sep17   0:00 /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libnotification-plugin.so 10 12582926 notification-plugin Notification Plugin Notification plugin for the Xfce panel
+root        1960  0.5  0.1 1264988 38104 ?       Ssl  Sep17   1:05 /usr/local/bin/cloudflared --no-autoupdate --config /etc/cloudflared/config.yml tunnel run
+sunwolf     2758  0.0  0.1 583492 36304 ?        Sl   Sep17   0:00 nm-applet

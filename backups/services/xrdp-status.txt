@@ -1,0 +1,24 @@
+● xrdp.service - xrdp daemon
+     Loaded: loaded (/usr/lib/systemd/system/xrdp.service; enabled; preset: enabled)
+     Active: active (running) since Wed 2025-09-17 21:38:27 PDT; 3h 21min ago
+       Docs: man:xrdp(8)
+             man:xrdp.ini(5)
+    Process: 1517 ExecStartPre=/bin/sh /usr/share/xrdp/socksetup (code=exited, status=0/SUCCESS)
+    Process: 1532 ExecStart=/usr/sbin/xrdp $XRDP_OPTIONS (code=exited, status=0/SUCCESS)
+   Main PID: 1542 (xrdp)
+      Tasks: 1 (limit: 35518)
+     Memory: 2.3M (peak: 25.4M)
+        CPU: 1min 6.165s
+     CGroup: /system.slice/xrdp.service
+             └─1542 /usr/sbin/xrdp
+
+Sep 17 21:41:17 sunwolf-EliteMini xrdp[2424]: [INFO ] lib_mod_log_peer: xrdp_pid=2424 connected to X11rdp_pid=2449 X11rdp_uid=1000 X11rdp_gid=1000 client_ip=::ffff:127.0.0.1 client_port=42332
+Sep 17 21:41:17 sunwolf-EliteMini xrdp[2424]: [INFO ] connected ok
+Sep 17 22:11:05 sunwolf-EliteMini xrdp[2271]: [ERROR] SSL_read: Failure in SSL library (protocol error?)
+Sep 17 22:11:05 sunwolf-EliteMini xrdp[2271]: [ERROR] SSL: error:0A000126:SSL routines::unexpected eof while reading
+Sep 17 22:11:05 sunwolf-EliteMini xrdp[2271]: [ERROR] xrdp_iso_send: trans_write_copy_s failed
+Sep 17 22:11:05 sunwolf-EliteMini xrdp[2271]: [ERROR] Sending [ITU T.125] DisconnectProviderUltimatum failed
+Sep 17 22:11:35 sunwolf-EliteMini xrdp[2424]: [ERROR] SSL_read: Failure in SSL library (protocol error?)
+Sep 17 22:11:35 sunwolf-EliteMini xrdp[2424]: [ERROR] SSL: error:0A000126:SSL routines::unexpected eof while reading
+Sep 17 22:11:35 sunwolf-EliteMini xrdp[2424]: [ERROR] xrdp_iso_send: trans_write_copy_s failed
+Sep 17 22:11:35 sunwolf-EliteMini xrdp[2424]: [ERROR] Sending [ITU T.125] DisconnectProviderUltimatum failed

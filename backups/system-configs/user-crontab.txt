@@ -1,0 +1,2 @@
+*/10 * * * * /home/sunwolf/emini-backup/emini-backup/scripts/advanced-health-monitor.sh >/dev/null 2>&1
+0 1 * * * /home/sunwolf/emini-backup/emini-backup/scripts/enhanced-system-backup.sh >/dev/null 2>&1
