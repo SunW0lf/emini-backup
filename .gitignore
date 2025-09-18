@@ -23,3 +23,6 @@ configs/cloudflared/*
 !configs/cloudflared/.gitkeep
 configs/user-cloudflared/* 
 !configs/user-cloudflared/.gitkeep
+
+# Ignore docker-compose files that may contain passwords
+docker-stacks/docker-compose.yml

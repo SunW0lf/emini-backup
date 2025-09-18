@@ -82,7 +82,7 @@ services:
       - grafana_data:/var/lib/grafana
       - ./grafana-provisioning:/etc/grafana/provisioning
     environment:
-      - GF_SECURITY_ADMIN_PASSWORD=T0YE3PBqK0sVumZud/uNrk22mDUcdNz0woFnLcOjbws=
+      - GF_SECURITY_ADMIN_PASSWORD=[REPLACE_WITH_SECURE_PASSWORD]
       - GF_USERS_ALLOW_SIGN_UP=false
       - GF_SERVER_ROOT_URL=http://localhost:3000
       - GF_INSTALL_PLUGINS=grafana-piechart-panel,grafana-worldmap-panel,grafana-clock-panel

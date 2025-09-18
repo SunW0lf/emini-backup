@@ -20,7 +20,7 @@
 ### **Grafana Dashboard**
 - **URL**: http://127.0.0.1:3000
 - **Username**: admin  
-- **Password**: `BnkzxblgKEsrW7pc3V4dWW90OFME7S8rwOeY33A6rs0=`
+- **Password**: `[REGENERATED - CHECK DOCKER-COMPOSE.YML]`
 - **Security**: Strong 256-bit generated password
 
 ### **Portainer Container Management**

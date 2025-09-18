@@ -48,7 +48,7 @@ git config --global --list | grep -E "(preload|fscache|pack|diff)"
 # Access Grafana (remember the secure password)
 # URL: http://127.0.0.1:3000
 # Username: admin
-# Password: BnkzxblgKEsrW7pc3V4dWW90OFME7S8rwOeY33A6rs0=
+# Password: [CHECK DOCKER-COMPOSE.YML FOR CURRENT PASSWORD]
 
 # Import these dashboard IDs:
 # - 1860: Node Exporter Full
