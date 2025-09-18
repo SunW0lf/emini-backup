@@ -26,3 +26,9 @@ configs/user-cloudflared/*
 
 # Ignore docker-compose files that may contain passwords
 docker-stacks/docker-compose.yml
+
+# Ignore private credentials and sensitive documents
+PRIVATE_ACCESS_CREDENTIALS.md
+*PRIVATE*
+*CREDENTIALS*
+*PASSWORDS*
