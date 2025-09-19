@@ -1,12 +1,12 @@
 ● keep-awake.service - Keep System Awake (Anti-Sleep Monitor)
      Loaded: loaded (/etc/systemd/system/keep-awake.service; enabled; preset: enabled)
-     Active: active (running) since Wed 2025-09-17 21:38:30 PDT; 3h 21min ago
+     Active: active (running) since Wed 2025-09-17 21:38:30 PDT; 1 day 3h ago
    Main PID: 2228 (bash)
       Tasks: 2 (limit: 35518)
-     Memory: 636.0K (peak: 1.7M)
-        CPU: 198ms
+     Memory: 668.0K (peak: 1.8M)
+        CPU: 1.501s
      CGroup: /system.slice/keep-awake.service
-             ├─  2228 /bin/bash -c "while true; do echo \"\$(date): EliteMini awake - Power button works for emergency shutdown/restart\" >> /var/log/keep-awake.log; sleep 300; done"
-             └─363698 sleep 300
+             ├─   2228 /bin/bash -c "while true; do echo \"\$(date): EliteMini awake - Power button works for emergency shutdown/restart\" >> /var/log/keep-awake.log; sleep 300; done"
+             └─3008285 sleep 300
 
 Sep 17 21:38:30 sunwolf-EliteMini systemd[1]: Started keep-awake.service - Keep System Awake (Anti-Sleep Monitor).

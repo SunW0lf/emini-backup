@@ -9,10 +9,12 @@
     altname enp2s0
     inet 192.168.1.173/24 brd 192.168.1.255 scope global dynamic noprefixroute eno1
        valid_lft 5082sec preferred_lft 5082sec
-    inet6 2601:204:d200:30b9:5ae2:e106:86cf:4b27/64 scope global temporary dynamic 
-       valid_lft 86191sec preferred_lft 14191sec
+    inet6 2601:204:d200:30b9:8b6b:fb6f:35ab:53c6/64 scope global temporary dynamic 
+       valid_lft 85994sec preferred_lft 13994sec
+    inet6 2601:204:d200:30b9:5ae2:e106:86cf:4b27/64 scope global temporary deprecated dynamic 
+       valid_lft 85994sec preferred_lft 0sec
     inet6 2601:204:d200:30b9:3a05:25ff:fe31:46ca/64 scope global dynamic mngtmpaddr 
-       valid_lft 86191sec preferred_lft 14191sec
+       valid_lft 85994sec preferred_lft 13994sec
     inet6 fe80::3a05:25ff:fe31:46ca/64 scope link 
        valid_lft forever preferred_lft forever
 3: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 

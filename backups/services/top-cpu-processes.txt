@@ -1,20 +1,20 @@
 USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
-sunwolf     3448 70.1  1.8 10058824 560328 ?     Sl   Sep17 139:21 warp-terminal
-sunwolf     2449  1.6  0.4 351832 135768 ?       Sl   Sep17   3:18 /usr/lib/xorg/Xorg :10 -auth .Xauthority -config xrdp/xorg.conf -noreset -nolisten tcp -logfile .xorgxrdp.%s.log
-sunwolf   366449  1.1  0.0  18868  3776 ?        S    01:00   0:00 /bin/bash /home/sunwolf/emini-backup/emini-backup/scripts/enhanced-system-backup.sh
-root        1960  0.5  0.1 1264988 38104 ?       Ssl  Sep17   1:05 /usr/local/bin/cloudflared --no-autoupdate --config /etc/cloudflared/config.yml tunnel run
-root        1033  0.3  0.1 2885404 44976 ?       Ssl  Sep17   0:36 /usr/lib/snapd/snapd
-root        1041  0.2  0.0  18268  8416 ?        Ss   Sep17   0:32 /usr/lib/systemd/systemd-logind
-root        1511  0.1  0.1 2689712 47024 ?       Ssl  Sep17   0:20 /usr/bin/containerd
-sunwolf     2432  0.1  0.0  20924 11712 ?        Ss   Sep17   0:17 /usr/lib/systemd/systemd --user
-message+    1016  0.1  0.0  11236  5256 ?        Ss   Sep17   0:15 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-root         423  0.1  0.1  91804 53228 ?        S<s  Sep17   0:15 /usr/lib/systemd/systemd-journald
-sunwolf     2608  0.1  0.3 3043068 111748 ?      Sl   Sep17   0:12 xfwm4
-root           1  0.0  0.0  23024 13288 ?        Ss   Sep17   0:08 /sbin/init splash
-root          18  0.0  0.0      0     0 ?        I    Sep17   0:06 [rcu_preempt]
-root      361469  0.0  0.0      0     0 ?        I    00:57   0:00 [kworker/u64:2-kvfree_rcu_reclaim]
-syslog      1222  0.0  0.0 222528  6092 ?        Ssl  Sep17   0:05 /usr/sbin/rsyslogd -n -iNONE
-root      350025  0.0  0.0      0     0 ?        I    00:50   0:00 [kworker/u64:4-kvfree_rcu_reclaim]
-root      258007  0.0  0.0      0     0 ?        I    00:00   0:01 [kworker/u64:1-events_power_efficient]
-root      288322  0.0  0.0      0     0 ?        I    00:17   0:00 [kworker/u64:0-kvfree_rcu_reclaim]
-polkitd     1024  0.0  0.0 399264 10592 ?        Ssl  Sep17   0:02 /usr/lib/polkit-1/polkitd --no-debug
+sunwolf  3011304  100  0.0  22412  4432 ?        R    01:00   0:00 ps aux --sort=-%cpu
+sunwolf     3448 69.4  2.6 10102544 810964 ?     Sl   Sep17 1137:12 warp-terminal
+sunwolf     2449  2.8  0.7 445740 219520 ?       Sl   Sep17  46:42 /usr/lib/xorg/Xorg :10 -auth .Xauthority -config xrdp/xorg.conf -noreset -nolisten tcp -logfile .xorgxrdp.%s.log
+sunwolf  3011015  1.4  0.0  18868  3704 ?        S    01:00   0:00 /bin/bash /home/sunwolf/emini-backup/emini-backup/scripts/enhanced-system-backup.sh
+root        1960  0.7  0.1 1265564 40188 ?       Ssl  Sep17  12:32 /usr/local/bin/cloudflared --no-autoupdate --config /etc/cloudflared/config.yml tunnel run
+sunwolf  1464280  0.3  0.8 1285689364 253020 ?   Sl   Sep18   3:17 /opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=1146229 --enable-crash-reporter=, --change-stack-guard-on-fork=enable --ozone-platform=x11 --disable-gpu-compositing --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=28 --time-ticks-at-unix-epoch=-1758170299878188 --launch-time-ticks=48038552614 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,15381430129545472352,13184533056741710725,2097152 --field-trial-handle=3,i,13403308208498867443,9391309917763114806,262144 --variations-seed-version=20250917-050038.719000
+root        1033  0.2  0.1 2885404 45980 ?       Ssl  Sep17   4:47 /usr/lib/snapd/snapd
+root        1041  0.2  0.0  18276  8312 ?        Ss   Sep17   4:19 /usr/lib/systemd/systemd-logind
+sunwolf  1146417  0.2  0.5 34699144 177956 ?     Sl   Sep18   2:28 /opt/google/chrome/chrome --type=gpu-process --ozone-platform=x11 --crashpad-handler-pid=1146229 --enable-crash-reporter=, --change-stack-guard-on-fork=enable --gpu-preferences=UAAAAAAAAAAgAAAIAAAAAAAAAAAAAGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAABgAAAAAAAAAAQAAAAAAAAAIAAAAAAAAAAgAAAAAAAAA --use-gl=angle --use-angle=swiftshader-webgl --shared-files --metrics-shmem-handle=4,i,13393314279131914779,15603877035274259800,262144 --field-trial-handle=3,i,13403308208498867443,9391309917763114806,262144 --variations-seed-version=20250917-050038.719000
+sunwolf     2608  0.2  0.3 3043068 114728 ?      Sl   Sep17   3:56 xfwm4
+sunwolf  1146221  0.2  1.0 34322180 317460 ?     SLl  Sep18   2:17 /opt/google/chrome/chrome /home/sunwolf/canned-meats/index.html
+sunwolf  1048613  0.2  0.0 351284 29128 ?        Sl   Sep18   2:18 /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libsystemload.so 25 12616177 systemload System Load Monitor Monitor CPU load, swap usage and memory footprint
+sunwolf  1073123  0.2  0.1 562556 51436 pts/1    Sl   Sep18   2:10 xfce4-terminal
+root        1511  0.1  0.1 2689712 47952 ?       Ssl  Sep17   2:43 /usr/bin/containerd
+sunwolf     2432  0.1  0.0  20924 11456 ?        Ss   Sep17   2:23 /usr/lib/systemd/systemd --user
+root         423  0.1  0.4 218960 136080 ?       S<s  Sep17   2:03 /usr/lib/systemd/systemd-journald
+message+    1016  0.1  0.0  12012  5640 ?        Ss   Sep17   2:02 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+sunwolf  1044297  0.1  0.1 354776 32276 ?        Sl   Sep18   1:05 /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libcpugraph.so 7 12590364 cpugraph CPU Graph Graphical representation of the CPU load
+sunwolf  1047705  0.0  0.0 350900 28912 ?        Sl   Sep18   1:02 /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libnetload.so 9 12604449 netload Network Monitor Show network traffic
